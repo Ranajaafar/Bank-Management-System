@@ -19,9 +19,10 @@ import lombok.experimental.Accessors;
  */
 @Data
 @Accessors(chain = true)
-public class BaseResponse<T> {
+public class BaseResponse<T> { //generic class
     private String status;
     private String code;
     private String message;
-    private T response;
+    private T response; //generic instance variable
+
 }
